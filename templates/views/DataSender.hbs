@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data sender to node</title>
+
+    <style>
+        body
+        {
+            background-color: darkgoldenrod;
+            font-size: 40px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    
+<form action="/takedata" method="POST">
+
+key =><input type="text" name="key" required> <br>
+value  =><input type="text" name="value" required> <br>
+
+<center>
+    <input type="submit" value="Submit">
+</center>
+</form>
+
+<center>
+    <form action="/show" method="post">
+    <input type="submit" value="Show Data">
+    </form>
+</center>
+</body>
+</html>
